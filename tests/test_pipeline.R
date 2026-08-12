@@ -15,8 +15,18 @@ expected_ids <- c(
   "P009", "P010", "P011", "P012"
 )
 
+actual_ids <- sort(result$analytic_cohort$participant_id)
+if (!setequal(actual_ids, expected_ids)) {
+  stop(
+    sprintf(
+      "Eligible cohort mismatch. Expected: %s. Actual: %s.",
+      paste(sort(expected_ids), collapse = ", "),
+      paste(actual_ids, collapse = ", ")
+    )
+  )
+}
+
 stopifnot(
-  setequal(result$analytic_cohort$participant_id, expected_ids),
   nrow(result$analytic_cohort) == 9,
   !anyDuplicated(result$analytic_cohort$participant_id)
 )
@@ -45,6 +55,7 @@ stopifnot(
 
 expected_rules <- c(
   "ENR-01", "ENR-02", "ENR-03", "ENR-04",
+  "ENR-05",
   "SVC-01", "SVC-02", "SVC-03", "SVC-04",
   "OUT-01", "OUT-02", "OUT-03", "OUT-04", "OUT-05"
 )
