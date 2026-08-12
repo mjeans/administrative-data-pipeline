@@ -1,0 +1,16 @@
+raw_id,site_code,enroll_date,dob,gender,language,baseline_score
+ p001 ,a1,01/15/2026,1988-04-02,Female,English,52
+P002,A1,2026-01-16,1979-09-18,M,english,61
+p003,B2,02/01/2026,1992-11-06,F,Spanish,
+P003,b2,2026-02-01,1992-11-06,Female,spanish,48
+P004,,02/04/2026,1985-06-21,Male,English,55
+P005,Z9,2026-02-05,1974-01-19,Female,English,57
+P006,C3,02/07/2026,1990-10-10,Male,Other,108
+P007,C3,2026-02-09,1982-02-28,F,English,43
+P008,B2,02/11/2026,1996-12-17,Male,Spanish,67
+P009,A1,2026-02-12,1989-05-25,Female,English,59
+P010,C3,02/13/2026,1977-08-08,M,English,46
+P011,B2,2026-02-15,1994-03-14,Female,Spanish,63
+P012,A1,02/18/2026,1986-07-30,Male,English,50
+P013,A1,not-a-date,1991-01-01,Female,English,54
+,A1,2026-02-20,1991-01-01,Female,English,54

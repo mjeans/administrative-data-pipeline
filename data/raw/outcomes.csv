@@ -1,0 +1,15 @@
+assessment_id,participant_id,assessment_date,outcome_score,assessment_type
+A001,P001,2026-04-15,60,Follow-up
+A002,p001,06/15/2026,66,followup
+A003,P002,2026-04-16,68,Follow-up
+A004,P003,05/01/2026,57,Follow-up
+A005,P004,2026-05-04,62,Follow-up
+A006,P005,2026-05-05,64,Follow-up
+A007,P006,05/07/2026,105,Follow-up
+A008,P007,2026-01-30,49,Follow-up
+A009,P008,2026-05-11,73,Follow-up
+A010,P009,05/12/2026,65,Follow-up
+A011,P010,2026-05-13,54,Follow-up
+A012,P011,05/15/2026,71,Follow-up
+A013,P012,2026-05-18,58,Follow-up
+A013,P012,2026-05-18,58,Follow-up
