@@ -96,10 +96,10 @@ run_pipeline <- function(
     filter(!is.na(participant_id)) |>
     mutate(
       completeness =
-        !is.na(baseline_score) +
-        !is.na(enrollment_date) +
-        !is.na(date_of_birth) +
-        !is.na(site_code)
+        as.integer(!is.na(baseline_score)) +
+        as.integer(!is.na(enrollment_date)) +
+        as.integer(!is.na(date_of_birth)) +
+        as.integer(!is.na(site_code))
     ) |>
     arrange(
       participant_id,
