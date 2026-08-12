@@ -1,0 +1,4 @@
+site_code,site_id,region,urbanicity
+A1,S001,North,Urban
+B2,S002,South,Suburban
+C3,S003,West,Rural
