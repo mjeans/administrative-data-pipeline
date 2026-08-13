@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Administrative data pipeline audit preview</title>
+  <desc id="desc">Four administrative extracts pass through standardization, validation, linkage, and temporal rules to produce an eligible analytic cohort and auditable quality log.</desc>
+  <rect width="1200" height="675" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="1200" height="92" fill="#0F172A"/>
+  <text x="54" y="46" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="30" font-weight="700">Administrative Data Pipeline</text>
+  <text x="54" y="73" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="16">From inconsistent source extracts to an analysis-ready cohort with a complete audit trail</text>
+
+  <g font-family="Arial, sans-serif">
+    <text x="54" y="137" fill="#334155" font-size="15" font-weight="700" letter-spacing="1">SOURCE EXTRACTS</text>
+    <g fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2">
+      <rect x="54" y="158" width="174" height="58" rx="10"/>
+      <rect x="54" y="228" width="174" height="58" rx="10"/>
+      <rect x="54" y="298" width="174" height="58" rx="10"/>
+      <rect x="54" y="368" width="174" height="58" rx="10"/>
+    </g>
+    <g fill="#0F172A" font-size="17" font-weight="700">
+      <text x="82" y="194">Enrollment</text>
+      <text x="82" y="264">Service events</text>
+      <text x="82" y="334">Outcomes</text>
+      <text x="82" y="404">Site crosswalk</text>
+    </g>
+    <g stroke="#94A3B8" stroke-width="3" fill="none">
+      <path d="M228 187 H270"/><path d="M228 257 H270"/><path d="M228 327 H270"/><path d="M228 397 H270"/>
+      <path d="M270 187 V397"/><path d="M270 292 H310"/>
+    </g>
+
+    <rect x="310" y="145" width="420" height="294" rx="18" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="344" y="185" fill="#0F172A" font-size="22" font-weight="700">Documented transformation workflow</text>
+    <g>
+      <rect x="344" y="207" width="352" height="42" rx="9" fill="#E0F2FE"/>
+      <rect x="344" y="261" width="352" height="42" rx="9" fill="#DFF7F1"/>
+      <rect x="344" y="315" width="352" height="42" rx="9" fill="#FEF3C7"/>
+      <rect x="344" y="369" width="352" height="42" rx="9" fill="#EDE9FE"/>
+      <text x="365" y="234" fill="#075985" font-size="17" font-weight="700">1  Standardize identifiers and dates</text>
+      <text x="365" y="288" fill="#047857" font-size="17" font-weight="700">2  Validate, deduplicate, and map sites</text>
+      <text x="365" y="342" fill="#92400E" font-size="17" font-weight="700">3  Link records and apply temporal rules</text>
+      <text x="365" y="396" fill="#5B21B6" font-size="17" font-weight="700">4  Build features and export audit outputs</text>
+    </g>
+    <path d="M730 292 H777" stroke="#94A3B8" stroke-width="3"/>
+    <path d="M767 283 L781 292 L767 301" fill="none" stroke="#94A3B8" stroke-width="3"/>
+
+    <rect x="790" y="145" width="356" height="294" rx="18" fill="#0F766E"/>
+    <text x="824" y="185" fill="#CCFBF1" font-size="15" font-weight="700" letter-spacing="1">VERIFIED OUTPUTS</text>
+    <text x="824" y="238" fill="#FFFFFF" font-size="44" font-weight="700">9</text>
+    <text x="882" y="238" fill="#FFFFFF" font-size="20" font-weight="700">eligible participants</text>
+    <line x1="824" y1="260" x2="1112" y2="260" stroke="#5EEAD4" opacity="0.55"/>
+    <text x="824" y="303" fill="#FFFFFF" font-size="20" font-weight="700">Analytic cohort</text>
+    <text x="824" y="331" fill="#CCFBF1" font-size="16">one row per eligible participant</text>
+    <text x="824" y="375" fill="#FFFFFF" font-size="20" font-weight="700">QA and exclusion log</text>
+    <text x="824" y="403" fill="#CCFBF1" font-size="16">every rule produces an auditable count</text>
+
+    <text x="54" y="493" fill="#334155" font-size="15" font-weight="700" letter-spacing="1">QUALITY CONTROLS</text>
+    <g>
+      <rect x="54" y="514" width="248" height="112" rx="14" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <rect x="320" y="514" width="248" height="112" rx="14" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <rect x="586" y="514" width="248" height="112" rx="14" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <rect x="852" y="514" width="294" height="112" rx="14" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <text x="78" y="551" fill="#0F172A" font-size="28" font-weight="700">4</text>
+      <text x="78" y="580" fill="#475569" font-size="15">source systems reconciled</text>
+      <text x="344" y="551" fill="#0F172A" font-size="28" font-weight="700">14</text>
+      <text x="344" y="580" fill="#475569" font-size="15">documented disposition rules</text>
+      <text x="610" y="551" fill="#0F172A" font-size="22" font-weight="700">Stata + R</text>
+      <text x="610" y="580" fill="#475569" font-size="15">parallel readable workflows</text>
+      <text x="876" y="551" fill="#0F172A" font-size="22" font-weight="700">Tests + CI</text>
+      <text x="876" y="580" fill="#475569" font-size="15">high-value conditions validated automatically</text>
+    </g>
+  </g>
+</svg>
