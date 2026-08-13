@@ -4,6 +4,8 @@ A reproducible pipeline for turning four inconsistent administrative extracts in
 
 The fixtures are synthetic and intentionally messy. They do not represent a client, organization, or participant.
 
+![Administrative data pipeline audit preview](assets/pipeline-audit-preview.svg)
+
 ## Scenario
 
 A multisite service program delivers participant-level files from separate enrollment, service, outcome, and site systems. The extracts disagree on capitalization and date formats, contain duplicate records, and include invalid scores, implausible service durations, orphaned identifiers, and events outside eligible windows.
