@@ -159,8 +159,7 @@ validate_input_contract <- function(input_dir = "data/raw") {
     outcomes$participant_id,
     "outcomes.participant_id"
   )
-
-  canonical_service_mode(services$mode)
+  service_modes <- canonical_service_mode(services$mode)
 
   recovery <- data.frame(
     source = c("enrollment", "service_events", "outcomes"),
@@ -171,6 +170,11 @@ validate_input_contract <- function(input_dir = "data/raw") {
     )
   )
 
+  enrollment$raw_id <- as.vector(enrollment_ids)
+  services$participant_id <- as.vector(service_ids)
+  services$mode <- service_modes
+  outcomes$participant_id <- as.vector(outcome_ids)
+
   invisible(
     list(
       site_crosswalk = site_crosswalk,
@@ -178,6 +182,36 @@ validate_input_contract <- function(input_dir = "data/raw") {
       service_events = services,
       outcomes = outcomes,
       participant_id_recovery = recovery
+    )
+  )
+}
+
+prepare_validated_input <- function(input_dir = "data/raw") {
+  contract <- validate_input_contract(input_dir)
+  prepared_dir <- tempfile("validated-admin-input-")
+  dir.create(prepared_dir, recursive = TRUE)
+
+  write_csv(
+    contract$site_crosswalk,
+    file.path(prepared_dir, "site_crosswalk.csv")
+  )
+  write_csv(
+    contract$enrollment,
+    file.path(prepared_dir, "enrollment.csv")
+  )
+  write_csv(
+    contract$service_events,
+    file.path(prepared_dir, "service_events.csv")
+  )
+  write_csv(
+    contract$outcomes,
+    file.path(prepared_dir, "outcomes.csv")
+  )
+
+  invisible(
+    list(
+      input_dir = prepared_dir,
+      participant_id_recovery = contract$participant_id_recovery
     )
   )
 }
