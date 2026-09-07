@@ -30,4 +30,6 @@ jobs:
         run: >-
           Rscript -e 'install.packages(c("dplyr", "readr", "stringr", "tibble"))'
       - name: Run pipeline assertions
-        run: Rscript tests/test_pipeline.R
+        run: |
+          Rscript tests/test_pipeline.R
+          Rscript tests/test_schema_drift.R
