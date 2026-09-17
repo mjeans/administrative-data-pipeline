@@ -1,0 +1,15 @@
+source,rule_id,description,n_records
+enrollment,ENR-01,Blank participant identifier,1
+enrollment,ENR-02,Duplicate participant record removed,1
+enrollment,ENR-03,Site code did not resolve,2
+enrollment,ENR-04,Invalid baseline score,1
+enrollment,ENR-05,Unparseable required date,1
+service_events,SVC-01,Duplicate event removed,1
+service_events,SVC-02,Invalid service duration,2
+service_events,SVC-03,Participant not in eligible cohort,4
+service_events,SVC-04,Service preceded enrollment,1
+outcomes,OUT-01,Duplicate assessment removed,1
+outcomes,OUT-02,Invalid outcome score,1
+outcomes,OUT-03,Participant not in eligible cohort,2
+outcomes,OUT-04,Assessment preceded enrollment,1
+outcomes,OUT-05,Earlier valid follow-up superseded,1
