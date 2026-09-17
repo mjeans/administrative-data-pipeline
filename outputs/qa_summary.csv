@@ -1,0 +1,7 @@
+metric,value
+raw_enrollment_rows,15
+eligible_participants,9
+raw_service_rows,19
+valid_service_events,11
+raw_outcome_rows,14
+participants_with_valid_followup,8
