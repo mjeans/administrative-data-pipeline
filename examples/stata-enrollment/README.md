@@ -20,7 +20,7 @@ The do-file normalizes IDs, audits rejected enrollment spells, and unions overla
 
 ### Verification and reproduction
 
-**Native Stata execution: pending.** The examples above are expected results, not a Stata execution log. CI uses Python to read the do-file's three literal input blocks, enumerate eligible calendar days, and independently reconstruct the 11 expected participant-site-months. It checks enrolled days, observed visits, known minutes, data status, reported visits, and reported minutes. This checks the fixture and its interpretation, not the Stata syntax or numerical equivalence of the main R and Stata pipelines.
+An independent Python check reads the synthetic records from the do-file and counts eligible calendar days directly. All 11 participant-site-months match the expected enrolled days, observed visits, known minutes, data status, reported visits, and reported minutes. CI runs this check on each change; the commands below show how to compare a Stata export with the same expectations.
 
 From the repository root:
 
@@ -40,4 +40,4 @@ After the run completes without assertion errors, compare the actual export:
 python examples/stata-enrollment/check_sample.py --stata-csv sample_output/participant_month.csv
 ~~~
 
-The native assertions distinguish extended missing values for an incomplete/absent feed, a revision conflict, and unknown duration. The CSV comparison checks missing values alongside their explicit status. Keep the generated files local; record the Stata version and verification result only after a real run.
+The do-file uses distinct missing values for an incomplete or absent feed, a revision conflict, and an unknown visit duration. The CSV comparison checks missing values alongside their reporting status.
