@@ -4,6 +4,8 @@ A reproducible pipeline for turning four inconsistent administrative extracts in
 
 The fixtures are synthetic and intentionally messy. They do not represent a client, organization, or participant.
 
+**Stata work sample:** [Enrollment spells and corrected service records](examples/stata-enrollment/README.md) · [Open the do-file](examples/stata-enrollment/stata_data_management_sample.do). Follow a revised visit from source row to participant-month, including the distinction between a true zero and an unknown count. Separate from the main pipeline; native Stata execution is pending.
+
 ![Administrative data pipeline audit preview](assets/pipeline-audit-preview.svg)
 
 ## Scenario
