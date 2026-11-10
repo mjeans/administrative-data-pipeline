@@ -18,6 +18,8 @@ jobs:
           python-version: "3.13"
       - name: Validate committed fixtures
         run: python tests/validate_fixtures.py
+      - name: Check synthetic Stata sample expectations independently (Python)
+        run: python examples/stata-enrollment/check_sample.py
 
   r-pipeline:
     runs-on: ubuntu-latest
